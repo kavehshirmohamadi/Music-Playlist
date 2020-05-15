@@ -1,0 +1,540 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.5rem;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+/********************
+ Left
+*********************/
+.dot {
+  padding: 0;
+  margin: 0;
+}
+
+.dot p {
+  margin-left: 0;
+  padding: 0;
+  margin: 0;
+  color: grey;
+  float: left;
+}
+
+.left {
+  background-color: #253252;
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+  color: #fff;
+}
+
+.left-content {
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.left-icon {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 80px;
+  float: left;
+  padding-right: 10px;
+  text-align: center;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+.left-icon i {
+  font-size: 1.5rem;
+}
+
+.left-icon p {
+  font-size: 2;
+}
+
+.btn-left, .btn-left-down {
+  display: block;
+  text-align: center;
+  width: 250px;
+  height: 40px;
+  border-radius: 50px;
+  background-image: linear-gradient(20deg, #0EE38E, #0D53AD);
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  margin-left: 15%;
+  padding-top: 5px;
+}
+
+.btn-left a, .btn-left-down a {
+  color: black;
+  text-decoration: none;
+}
+
+.btn-left a:hover, .btn-left-down a:hover {
+  color: #fff;
+}
+
+.left-lib {
+  display: block;
+  padding-right: 10px;
+}
+
+.left-lib a {
+  text-decoration: none;
+  color: grey;
+  text-transform: uppercase;
+}
+
+.left-lib a:hover {
+  color: #fff;
+}
+
+.left-lib i {
+  float: right;
+  cursor: pointer;
+}
+
+.lib-list {
+  padding: 10px;
+}
+
+.lib-list a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.lib-list a:hover {
+  color: grey;
+  font-size: bold;
+}
+
+.lib-list li {
+  list-style: none;
+}
+
+.left-playlist {
+  display: block;
+  padding: 10px;
+}
+
+.left-playlist a {
+  text-decoration: none;
+  color: grey;
+  text-transform: uppercase;
+}
+
+.left-playlist a:hover {
+  color: #fff;
+}
+
+.left-playlist i {
+  float: right;
+  cursor: pointer;
+}
+
+.play-list {
+  display: block;
+  padding: 10px;
+}
+
+.play-list a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.play-list a:hover {
+  color: grey;
+  font-size: bold;
+}
+
+.play-list li {
+  list-style: none;
+}
+
+/********************
+ End Left
+*********************/
+/********************
+ Center
+*********************/
+.center {
+  position: relative;
+  background-color: #17213b;
+  -webkit-box-flex: 15;
+      -ms-flex: 15;
+          flex: 15;
+}
+
+.center-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  height: 300px;
+  width: 100%;
+}
+
+.center-header img {
+  background-position: center;
+  background-size: center;
+  width: 100%;
+  height: 100%;
+}
+
+.center-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.nex-prev {
+  z-index: 2;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.next i {
+  display: inline-block;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 10%;
+  color: #fff;
+  height: 10%;
+  padding-right: 20px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.prev i {
+  display: inline-block;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: #fff;
+  width: 10%;
+  height: 10%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  padding-right: 20px;
+}
+
+.menu {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  z-index: 2;
+  color: #fff;
+}
+
+.menu a {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.search-box {
+  z-index: 2;
+  width: 10%;
+  -webkit-box-flex: 8;
+      -ms-flex-positive: 8;
+          flex-grow: 8;
+  text-align: center;
+  padding: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.search-box input {
+  height: 30px;
+  width: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 50px;
+}
+
+.search-box input:focus {
+  outline: none;
+}
+
+.menu {
+  margin: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+}
+
+.menu i {
+  color: #fff;
+}
+
+.music {
+  position: relative;
+  max-width: 100%;
+  height: 100%vh;
+  z-index: 2;
+}
+
+.music .cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+
+.music .cover img {
+  width: 30%;
+  height: 30%;
+  margin-top: 140px;
+  background-color: #253252;
+}
+
+.music .cover ul {
+  margin-top: 100px;
+}
+
+.music .cover li {
+  list-style: none;
+  color: white;
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
+
+.music .cover li:nth-child(1) {
+  text-transform: uppercase;
+  font-size: 1.9rem;
+}
+
+.music .cover .btn-play {
+  display: block;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.music .cover .btn-play-dot, .music .cover .btn-play-tlg {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  text-align: center;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  margin-left: 50px;
+}
+
+.music .cover .btn-play-tlg {
+  border-radius: 100%;
+  margin: 0;
+}
+
+.music .cover .btn-play-music, .music .cover .btn-play-follow {
+  background-color: #17213b;
+  color: #fff;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: 2px #fff solid;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+
+.music .cover .btn-play-follow {
+  margin-right: 0;
+}
+
+.music .cover .btn-play-music:hover, .music .cover .btn-play-follow:hover {
+  color: #fff;
+  background-color: #253252;
+}
+
+.music .cover .btn-play-follow:hover {
+  color: #fff;
+  background-color: #253252;
+}
+
+.music .cover a {
+  text-decoration: none;
+}
+
+.table {
+  position: relative;
+}
+
+.table table {
+  position: absolute;
+  top: 300px;
+  left: 10px;
+  padding: 10px;
+  color: #fff;
+}
+
+.table td {
+  padding-right: 60px;
+  padding-bottom: 7px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.table td:nth-child(1) {
+  font-size: 2rem;
+}
+
+.table th {
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+/********************
+ right
+*********************/
+.right {
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #253252;
+}
+
+.right-persion {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.right-persion ul {
+  margin-left: 10px;
+}
+
+.right-persion li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+}
+
+.right-persion img {
+  margin-bottom: 10px;
+  vertical-align: middle;
+  width: 20%;
+  height: 20%;
+}
+
+.right-persion a {
+  padding-left: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.right-persion i {
+  margin-left: 35px;
+  color: #fff;
+}
+
+.right-friend {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.right-friend ul {
+  height: 100%;
+  margin-left: 10px;
+}
+
+.right-friend li:nth-child(2) {
+  float: right;
+  padding-right: 10px;
+  color: #fff;
+}
+
+.right-friend li:nth-child(2) :hover {
+  cursor: pointer;
+  color: grey;
+}
+
+.right-friend li {
+  list-style: none;
+  float: left;
+}
+
+.right-friend a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.right-list-friend {
+  display: block;
+  min-height: 80vh;
+}
+
+.right-list-friend ul {
+  float: left;
+  margin-left: 20px;
+  overflow-y: scroll;
+  max-height: 80vh;
+}
+
+.right-list-friend li {
+  display: block;
+  list-style: none;
+  text-align: left;
+  padding-right: 38px;
+}
+
+.right-list-friend a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.right-list-friend img {
+  margin-bottom: 10px;
+  vertical-align: middle;
+  width: 20%;
+  height: 20%;
+}
+
+/* For Float */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+/*# sourceMappingURL=style.css.map */

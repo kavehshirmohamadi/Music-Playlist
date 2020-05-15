@@ -1,0 +1,486 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+// colors
+// background-color
+$bgcolor:#253252;
+$centerbg:#17213b;
+// font-color
+$fontcolor:#fff;
+//hover left-right
+$hovergray:grey;
+// Gradiant
+$Lgradiant:#0EE38E;
+$Rgradiant:#0D53AD;
+
+/********************
+ Left
+*********************/
+
+.dot {
+    padding: 0;
+    margin: 0;
+}
+
+.dot p {
+    margin-left: 0;
+    padding: 0;
+    margin: 0;
+    color: $hovergray;
+    float: left;
+}
+
+.left {
+    background-color: $bgcolor;
+    flex: 7;
+    color: $fontcolor;
+}
+
+.left-content {
+    display: block;
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.left-icon {
+    display: block;
+    box-sizing: border-box;
+    padding-top: 80px;
+    float: left;
+    padding-right: 10px;
+    text-align: center;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    i {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 2;
+    }
+}
+
+.btn-left {
+    display: block;
+    text-align: center;
+    width: 250px;
+    height: 40px;
+    border-radius: 50px;
+    background-image: linear-gradient(20deg, $Lgradiant, $Rgradiant);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    margin-left: 15%;
+    padding-top: 5px;
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $fontcolor;
+    }
+}
+
+.btn-left-down {
+    @extend .btn-left;
+}
+
+.left-lib {
+    display: block;
+    padding-right: 10px;
+    a {
+        text-decoration: none;
+        color: $hovergray;
+        text-transform: uppercase;
+    }
+    a:hover {
+        color: $fontcolor;
+    }
+    i {
+        float: right;
+        cursor: pointer;
+    }
+}
+
+.lib-list {
+    padding: 10px;
+    a {
+        text-decoration: none;
+        color: $fontcolor;
+        font-size: 1.3rem;
+    }
+    a:hover {
+        color: $hovergray;
+        font-size: bold;
+    }
+    li {
+        list-style: none;
+    }
+}
+
+.left-playlist {
+    display: block;
+    padding: 10px;
+    a {
+        text-decoration: none;
+        color: $hovergray;
+        text-transform: uppercase;
+    }
+    a:hover {
+        color: $fontcolor;
+    }
+    i {
+        float: right;
+        cursor: pointer;
+    }
+}
+
+.play-list {
+    display: block;
+    padding: 10px;
+    a {
+        text-decoration: none;
+        color: $fontcolor;
+        font-size: 1.3rem;
+    }
+    a:hover {
+        color: $hovergray;
+        font-size: bold;
+    }
+    li {
+        list-style: none;
+    }
+}
+
+
+/********************
+ End Left
+*********************/
+
+
+/********************
+ Center
+*********************/
+
+.center {
+    position: relative;
+    background-color: $centerbg;
+    flex: 15;
+}
+
+.center-header {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    order: 2;
+    height: 300px;
+    width: 100%;
+    img {
+        background-position: center;
+        background-size: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.center-content {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.nex-prev {
+    z-index: 2;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.next i {
+    display: inline-block;
+    flex-grow: 1;
+    width: 10%;
+    color: $fontcolor;
+    height: 10%;
+    padding-right: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.prev i {
+    display: inline-block;
+    flex-grow: 1;
+    color: $fontcolor;
+    width: 10%;
+    height: 10%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-right: 20px;
+}
+
+.menu {
+    flex-grow: 1;
+    z-index: 2;
+    color: $fontcolor;
+    a {
+        font-size: 1.5rem;
+        color: $fontcolor;
+    }
+}
+
+.search-box {
+    z-index: 2;
+    width: 10%;
+    flex-grow: 8;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    input {
+        height: 30px;
+        width: 200px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 50px;
+    }
+    input:focus {
+        outline: none;
+    }
+}
+
+.menu {
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+    i {
+        color: $fontcolor;
+    }
+}
+
+.music {
+    position: relative;
+    max-width: 100%;
+    height: 100%vh;
+    z-index: 2;
+}
+
+.music .cover {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    img {
+        width: 30%;
+        height: 30%;
+        margin-top: 140px;
+        background-color: $bgcolor;
+    }
+    ul {
+        margin-top: 100px;
+    }
+    li {
+        list-style: none;
+        color: white;
+        margin-bottom: 5px;
+        padding-left: 20px;
+    }
+    li:nth-child(1) {
+        text-transform: uppercase;
+        font-size: 1.9rem;
+    }
+    .btn-play {
+        display: block;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    .btn-play-dot {
+        color: $fontcolor;
+        text-decoration: none;
+        padding: 5px;
+        text-align: center;
+        border-radius: 50px;
+        border: 2px solid $fontcolor;
+        margin-left: 50px;
+    }
+    .btn-play-tlg {
+        @extend .btn-play-dot;
+        border-radius: 100%;
+        margin: 0;
+    }
+    .btn-play-music {
+        background-color: $centerbg;
+        color: $fontcolor;
+        padding-right: 20px;
+        padding-left: 20px;
+        border: 2px $fontcolor solid;
+        border-radius: 50px;
+        margin-right: 20px;
+    }
+    .btn-play-follow {
+        @extend .btn-play-music;
+        margin-right: 0;
+    }
+    .btn-play-music:hover {
+        color: $fontcolor;
+        background-color: $bgcolor;
+    }
+    .btn-play-follow:hover {
+        color: $fontcolor;
+        background-color: $bgcolor;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+.table {
+    position: relative;
+    table {
+        position: absolute;
+        top: 300px;
+        left: 10px;
+        padding: 10px;
+        color: $fontcolor;
+    }
+    td {
+        padding-right: 60px;
+        padding-bottom: 7px;
+        font-size: 1rem;
+        text-align: left;
+    }
+    td:nth-child(1) {
+        font-size: 2rem;
+    }
+    th {
+        text-align: left;
+        padding-bottom: 20px;
+    }
+}
+
+
+/********************
+ right
+*********************/
+
+.right {
+    flex: 7;
+    width: 100%;
+    min-height: 100vh;
+    background-color: $bgcolor;
+}
+
+.right-persion {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    ul {
+        margin-left: 10px;
+    }
+    li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        float: left;
+    }
+    img {
+        margin-bottom: 10px;
+        vertical-align: middle;
+        width: 20%;
+        height: 20%;
+    }
+    a {
+        padding-left: 10px;
+        text-decoration: none;
+        color: $fontcolor;
+        font-size: 2.5rem;
+    }
+    i {
+        margin-left: 35px;
+        color: $fontcolor;
+    }
+}
+
+.right-friend {
+    display: block;
+    margin-bottom: 20px;
+    ul {
+        height: 100%;
+        margin-left: 10px;
+    }
+    li:nth-child(2) {
+        float: right;
+        padding-right: 10px;
+        color: $fontcolor;
+         :hover {
+            cursor: pointer;
+            color: $hovergray;
+        }
+    }
+    li {
+        list-style: none;
+        float: left;
+    }
+    a {
+        text-decoration: none;
+        color: $fontcolor;
+    }
+}
+
+.right-list-friend {
+    display: block;
+    min-height: 80vh;
+    ul {
+        float: left;
+        margin-left: 20px;
+        overflow-y: scroll;
+        max-height: 80vh;
+    }
+    li {
+        display: block;
+        list-style: none;
+        text-align: left;
+        padding-right: 38px;
+    }
+    a {
+        color: $fontcolor;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+    img {
+        margin-bottom: 10px;
+        vertical-align: middle;
+        width: 20%;
+        height: 20%;
+    }
+}
+
+
+/* For Float */
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}
